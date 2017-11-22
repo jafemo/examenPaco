@@ -1,0 +1,10 @@
+{% extends '::plantilla.html.twig' %}
+{% block body %}
+{% for equipo in TablaEquipos %}
+
+<h2>{{equipo.nombre}}</h2>
+<p>{{equipo.apellidos}}</p>
+
+{% endfor %}
+
+{% endblock %}

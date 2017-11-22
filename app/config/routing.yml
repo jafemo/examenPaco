@@ -1,0 +1,8 @@
+futsal:
+    resource: '@futsalBundle/Controller/'
+    prefix:   /proyecto
+    type: annotation
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

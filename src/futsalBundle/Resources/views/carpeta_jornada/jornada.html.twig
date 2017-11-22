@@ -1,0 +1,18 @@
+{% extends '::plantilla.html.twig' %}
+{% block body %}
+{% for jornada in TablaJornada %}
+
+<h2>{{jornada.numero}}</h2>
+<p>{{jornada.equipo}}</p>
+<p>{{jornada.rival}}</p>
+<a href="{{
+   path(
+      'buscarJornada',
+     { 'id': jornada.id }
+   )
+  }}">
+   {{ jornada.id }}
+</a>
+{% endfor %}
+
+{% endblock %}
